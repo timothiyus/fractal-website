@@ -156,12 +156,50 @@
                   <textarea id="message" name="message" placeholder="What are you building? What's the timeline? The more context, the better." required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 12px;">Send Message</button>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; padding: 16px;">
+                    Send Message →
+                  </button>
+                </div>
+
+                <p style="font-size: 0.78rem; color: var(--ink-soft); margin-top: 14px; text-align: center;">We'll respond within 2 business day. Discovery calls are always free.</p>
               </form>
-              <p style="font-size: 0.75rem; color: var(--ink-soft); margin-top: 16px; text-align: center;">We'll respond within 2 business days.</p>
+
+              <div id="formSuccess" style="display: none; text-align: center; padding: 48px 24px;">
+                <div style="font-size: 3rem; margin-bottom: 16px;">✅</div>
+                <h3 style="margin-bottom: 10px;">Message received!</h3>
+                <p>We'll be in touch within two business days.</p>
+              </div>
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--white);">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">Common Questions</span>
+          <h2>Before you reach out</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 900px; margin: 0 auto;">
+          <div style="padding: 28px; background: var(--cream); border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 10px; font-size: 1rem;">Do you work with clients outside Kansas?</h4>
+            <p style="font-size: 0.88rem;">Yes. Consulting and podcast development work remotely. Drone services are on-location, primarily in Kansas and the surrounding region.</p>
+          </div>
+          <div style="padding: 28px; background: var(--cream); border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 10px; font-size: 1rem;">How long does a podcast development project take?</h4>
+            <p style="font-size: 0.88rem;">Starter packages can be complete in 1–2 weeks. Launch and Professional packages typically run 3–6 weeks depending on scope and your readiness.</p>
+          </div>
+          <div style="padding: 28px; background: var(--cream); border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 10px; font-size: 1rem;">What's included in a consulting retainer?</h4>
+            <p style="font-size: 0.88rem;">Dedicated hours each month, priority scheduling, and ongoing access via email or text. Retainer clients get continuity  we stay inside your project, not just parachuting in for one-offs.</p>
+          </div>
+          <div style="padding: 28px; background: var(--cream); border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 10px; font-size: 1rem;">Is the discovery call really free?</h4>
+            <p style="font-size: 0.88rem;">Yes. 30 minutes, no pitch deck, no pressure. We want to understand your situation before proposing anything  and sometimes the honest answer is we're not the right fit.</p>
+          </div>
         </div>
       </div>
     </section>
