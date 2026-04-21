@@ -264,7 +264,7 @@ p  { color: var(--ink-mid); line-height: 1.75; }
   max-width: 600px;
 }
 .hero__logo-top {
-  height: 80px;
+  height: 140px;
   width: auto;
   margin-bottom: 32px;
 }
@@ -908,6 +908,7 @@ p  { color: var(--ink-mid); line-height: 1.75; }
   .form-row { grid-template-columns: 1fr; }
   .hero__stats { gap: 32px; }
   .footer__grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .footer__brand { grid-column: 1 / -1; }
   .btn-group { flex-wrap: nowrap; }
 }
 
