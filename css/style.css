@@ -264,9 +264,9 @@ p  { color: var(--ink-mid); line-height: 1.75; }
   max-width: 600px;
 }
 .hero__logo-top {
-  height: 140px;
+  height: 420px;
   width: auto;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
 }
 .hero__logo {
   height: 600px;
