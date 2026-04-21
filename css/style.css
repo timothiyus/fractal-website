@@ -155,6 +155,7 @@ p  { color: var(--ink-mid); line-height: 1.75; }
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 .btn-group { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.divider-line { display: block; }
 
 /* ─── Navigation ─── */
 .nav {
@@ -905,6 +906,8 @@ p  { color: var(--ink-mid); line-height: 1.75; }
   .form-row { grid-template-columns: 1fr; }
   .hero__stats { gap: 32px; }
   .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+  .divider-line { display: none; }
+  .btn-group { flex-wrap: nowrap; }
 }
 
 @media (max-width: 480px) {
