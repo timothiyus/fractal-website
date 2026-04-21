@@ -6,43 +6,101 @@
   <title>Team | Kolby Van Camp & Dawson Wagner | Fractal Media Solutions</title>
   <meta name="description" content="Meet Kolby Van Camp and Dawson Wagner, co-founders of Fractal Media Solutions. Communications strategist, producer, podcast hosts." />
   <meta name="keywords" content="Kolby Van Camp, Dawson Wagner, media team, podcast hosts, communications strategist, producer" />
-  <meta property="og:title" content="Team | Fractal Media Solutions" />
-  <meta property="og:description" content="Meet Kolby Van Camp and Dawson Wagner, co-founders of Fractal Media Solutions." />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
   <link rel="canonical" href="https://fractal.media/team.html" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-
-  <!-- Schema Markup: Team Members -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "Person",
-        "name": "Kolby Van Camp",
-        "url": "https://fractal.media/team.html",
-        "jobTitle": "Co-Founder, Communications Strategist & Host",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Fractal Media Solutions, LLC"
-        },
-        "knowsAbout": ["Communications Strategy", "Broadcast Media", "Audio Production", "Podcasting"]
-      },
-      {
-        "@type": "Person",
-        "name": "Dawson Wagner",
-        "url": "https://fractal.media/team.html",
-        "jobTitle": "Co-Founder, Producer & Co-Host",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Fractal Media Solutions, LLC"
-        },
-        "knowsAbout": ["Audio Production", "Video Production", "Podcast Production", "Technical Production"]
-      }
-    ]
-  }
-  </script>
 </head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/favicon.png" alt="Fractal Media Solutions" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Work With Us</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Meet the Team</span>
+        <h1>Built by communicators</h1>
+        <p>Kolby and Dawson bring complementary expertise, a long track record of making things together, and a shared commitment to helping brands build platforms they actually own.</p>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--white);">
+      <div class="container">
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="assets/kolby.png" alt="Kolby Van Camp" style="height: 345px; width: 100%; object-fit: contain; background: var(--cream);" />
+            <div class="team-card__body">
+              <div class="team-card__name">Kolby Van Camp</div>
+              <div class="team-card__title">Founder | Strategy & Communications</div>
+              <p class="team-card__bio">Kolby brings broadcast media experience, musical artistry, and elite verbal communication skills to every project. He specializes in helping brands find and articulate their core message and then build the infrastructure to amplify it. He holds a master's degree in mass communications from Kansas State University and serves as sports director in Garden City, KS for Western Kansas Broadcast Center, LLC. He is also founder artistic director for the Sonus Chamber Choir in Topeka, KS.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="assets/dawson.png" alt="Dawson Wagner" style="height: 345px; width: 100%; object-fit: contain; background: var(--cream);" />
+            <div class="team-card__body">
+              <div class="team-card__name">Dawson Wagner</div>
+              <div class="team-card__title">Co-Founder | Production & Operations</div>
+              <p class="team-card__bio">Dawson is the production backbone of Fractal, bringing technical expertise, creative instinct, and a steady presence across all projects. His partnership with Kolby is the foundation the business is built on: complementary strengths and a long track record of making things together. He holds a master's degree in mass communications from Kansas State University and serves as communications faculty at Kansas State University.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 style="color: var(--cream); margin-bottom: 8px; font-size: 1rem;">Fractal Media Solutions, LLC</h4>
+          <p>Strategic communications and media production for brands ready to build something worth hearing. Based in Kansas.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#podcast">Podcast Dev</a></li>
+            <li><a href="services.html#drone">Drone</a></li>
+            <li><a href="services.html#voiceover">Voiceover</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Fractal Media Solutions, LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

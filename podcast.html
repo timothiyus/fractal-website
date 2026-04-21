@@ -6,37 +6,144 @@
   <title>The Space Between | Science Podcast by Kolby Van Camp & Dawson Wagner</title>
   <meta name="description" content="The Space Between is a science communication podcast exploring astronomy, space exploration, and rigorous science. Hosted by Kolby Van Camp and Dawson Wagner for a global audience." />
   <meta name="keywords" content="science podcast, astronomy podcast, space news, science communication, The Space Between podcast" />
-  <meta property="og:title" content="The Space Between | Science Podcast" />
-  <meta property="og:description" content="A science communication podcast exploring astronomy, space exploration, and rigorous science. Hosted by Kolby Van Camp and Dawson Wagner." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://fractal.media/assets/logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Space Between | Science Podcast" />
   <link rel="canonical" href="https://fractal.media/podcast.html" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
-
-  <!-- Schema Markup: Podcast -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Podcast",
-    "name": "The Space Between",
-    "description": "A science communication podcast exploring astronomy, space exploration, and rigorous science",
-    "image": "https://fractal.media/assets/logo.png",
-    "url": "https://fractal.media/podcast.html",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "Kolby Van Camp"
-      },
-      {
-        "@type": "Person",
-        "name": "Dawson Wagner"
-      }
-    ],
-    "genre": "Science",
-    "webFeed": "https://fractal.media/podcast-feed.xml"
-  }
-  </script>
 </head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="Fractal Media Solutions" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="ai-services.html">AI Services</a></li>
+        <li><a href="podcast.html" class="active">Podcast</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Work With Us</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="ai-services.html">AI Services</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section style="background: linear-gradient(160deg, #0d1f1d 0%, #1a3a35 50%, #27806f22 100%); padding: calc(var(--nav-h) + 80px) 0 80px; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: -80px; right: -80px; width: 520px; height: 520px; background: radial-gradient(circle, rgba(39,128,111,0.18) 0%, transparent 65%); border-radius: 50%; pointer-events: none;"></div>
+      <div style="position: absolute; bottom: -60px; left: 10%; width: 320px; height: 320px; background: radial-gradient(circle, rgba(39,128,111,0.1) 0%, transparent 65%); border-radius: 50%; pointer-events: none;"></div>
+      <div class="container">
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: 64px; align-items: center;">
+          <div style="background: linear-gradient(145deg, #1f6358 0%, #27806f 50%, #3da08c 100%); width: 220px; height: 220px; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 5rem; box-shadow: 0 16px 48px rgba(0,0,0,0.4); flex-shrink: 0;">🌌</div>
+          <div>
+            <span class="section-label" style="color: var(--green-light);">A Fractal Media Production</span>
+            <h1 style="color: var(--cream); font-size: clamp(2.2rem, 4.5vw, 3.4rem);">The Space Between</h1>
+            <p style="color: #a8c5c0; font-size: 1.05rem; max-width: 520px; margin: 14px 0 28px;">Science communication for curious minds. We explore astronomy, space news, and the frontier of human knowledge — with the rigor it deserves and the clarity it needs.</p>
+            <div class="podcast-card__tags" style="margin-bottom: 28px;">
+              <span class="tag">Astronomy</span>
+              <span class="tag">Science Communication</span>
+              <span class="tag">Space News</span>
+              <span class="tag">Global Audience</span>
+            </div>
+            <div class="btn-group">
+              <a href="#listen" class="btn btn--primary">Listen Now</a>
+              <a href="services.html#advertising" class="btn btn--outline-light">Advertise on the Show</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start;">
+          <div>
+            <span class="section-label">About the Show</span>
+            <h2>Space news that doesn't talk down to you.</h2>
+            <p style="margin-top: 16px;">There's no shortage of space content on the internet. Most of it is either too shallow to be interesting or too dense to be accessible. <em>The Space Between</em> lives in the middle — the gap between the headlines and the science behind them.</p>
+            <p style="margin-top: 14px;">Every episode, hosts Kolby Van Camp and Dawson Wagner bring the same thing: genuine curiosity, real research, and the conviction that science communication done well changes how people see the world.</p>
+            <p style="margin-top: 14px;">Active since mid-2025, the show has built a growing global audience drawn by its combination of accessible science and honest conversation.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; gap: 16px; background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px;">
+              <div style="font-size: 1.6rem; flex-shrink: 0;">🎙️</div>
+              <div>
+                <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; color: var(--ink); margin-bottom: 4px;">Hosted by Kolby & Dawson</div>
+                <p style="font-size: 0.85rem;">Two communicators who take science seriously and take jargon personally.</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px;">
+              <div style="font-size: 1.6rem; flex-shrink: 0;">🌍</div>
+              <div>
+                <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; color: var(--ink); margin-bottom: 4px;">Global Science Audience</div>
+                <p style="font-size: 0.85rem;">Listeners who care about getting it right — ideal for science-adjacent brands and sponsors.</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px;">
+              <div style="font-size: 1.6rem; flex-shrink: 0;">🔭</div>
+              <div>
+                <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; color: var(--ink); margin-bottom: 4px;">Research-First Approach</div>
+                <p style="font-size: 0.85rem;">Every episode is sourced. We debunk myths, cover new discoveries, and interview researchers at the frontier.</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px;">
+              <div style="font-size: 1.6rem; flex-shrink: 0;">📅</div>
+              <div>
+                <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; color: var(--ink); margin-bottom: 4px;">Active Since Mid-2025</div>
+                <p style="font-size: 0.85rem;">Consistent cadence. Building a catalog with lasting value, not just a news feed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h4 style="color: var(--cream); margin-bottom: 8px; font-size: 1rem;">Fractal Media Solutions, LLC</h4>
+          <p>Strategic communications and media production for brands ready to build something worth hearing. Based in Kansas.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#podcast">Podcast Dev</a></li>
+            <li><a href="services.html#drone">Drone</a></li>
+            <li><a href="services.html#voiceover">Voiceover</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="podcast.html">The Space Between</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Fractal Media Solutions, LLC. All rights reserved.</p>
+        <p>Built in Southwest Kansas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

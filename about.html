@@ -14,35 +14,197 @@
   <link rel="canonical" href="https://fractal.media/about.html" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
-
-  <!-- Schema Markup: Organization with Team Members -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Fractal Media Solutions, LLC",
-    "url": "https://fractal.media",
-    "logo": "https://fractal.media/assets/logo.png",
-    "description": "Strategic communications and media production company based in Southwest Kansas",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Kansas",
-      "addressCountry": "US"
-    },
-    "foundingDate": "2025-10",
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Kolby Van Camp",
-        "jobTitle": "Co-Founder, Communications Strategist"
-      },
-      {
-        "@type": "Person",
-        "name": "Dawson Wagner",
-        "jobTitle": "Co-Founder, Producer"
-      }
-    ],
-    "knowsAbout": ["Communications Strategy", "Podcast Production", "Drone Videography", "Voiceover Production", "AI Media Operations"]
-  }
-  </script>
 </head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="Fractal Media Solutions" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="ai-services.html">AI Services</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Work With Us</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="ai-services.html">AI Services</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ─── Page Hero ─── -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">About Us</span>
+        <h1>Built by communicators,<br />for communicators.</h1>
+        <p>Fractal Media Solutions was founded on one conviction: great communication shouldn't require gatekeepers. We give brands and creators the tools, strategy, and production power to own their platforms.</p>
+      </div>
+    </section>
+
+    <!-- ─── Origin Story ─── -->
+    <section class="section" style="background: var(--white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+          <div>
+            <span class="section-label">Our Story</span>
+            <h2>Southwest Kansas roots.<br />National ambition.</h2>
+            <p style="margin-top: 16px;">Fractal Media Solutions was launched in Q4 2025 by Kolby Van Camp and Dawson Wagner — two communicators who met as collaborators and became business partners out of a shared belief that the media landscape is fundamentally changing.</p>
+            <p style="margin-top: 16px;">The name says it. Fractals are self-similar at every scale — the same structure, whether you zoom in or out. That's how we think about communications: the principles that make a great conversation also make a great podcast, a compelling campaign, and a scalable AI content system.</p>
+            <p style="margin-top: 16px;">We're based in Southwest Kansas, but our work reaches nationally and globally through <em>The Space Between</em> — and our AI services clients are anywhere there's an internet connection.</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div style="background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; text-align: center;">
+              <div style="font-family: var(--font-head); font-size: 2.2rem; font-weight: 800; color: var(--green);">Q4</div>
+              <div style="font-family: var(--font-head); font-size: 2.2rem; font-weight: 800; color: var(--green); margin-top: -8px;">2025</div>
+              <div style="font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px;">Founded</div>
+            </div>
+            <div style="background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; text-align: center;">
+              <div style="font-family: var(--font-head); font-size: 2.2rem; font-weight: 800; color: var(--green);">5</div>
+              <div style="font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px;">Service Verticals</div>
+            </div>
+            <div style="background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; text-align: center;">
+              <div style="font-family: var(--font-head); font-size: 2.2rem; font-weight: 800; color: var(--green);">SW KS</div>
+              <div style="font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px;">Home Base</div>
+            </div>
+            <div style="background: var(--green); border-radius: var(--radius-lg); padding: 28px; text-align: center;">
+              <div style="font-family: var(--font-head); font-size: 2.2rem; font-weight: 800; color: var(--cream);">Global</div>
+              <div style="font-size: 0.85rem; color: rgba(253,247,239,0.7); margin-top: 6px;">Podcast Reach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Team ─── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Team</span>
+          <h2>Two voices. One mission.</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-card__photo">🎙️</div>
+            <div class="team-card__body">
+              <div class="team-card__name">Kolby Van Camp</div>
+              <div class="team-card__title">Co-Founder · Communications Strategist · Host</div>
+              <p class="team-card__bio">Kolby brings a background in broadcast media, music performance, and communications strategy to every project. With elite verbal communication skills and a track record in live performance and production, he specializes in helping brands find and articulate their core message — and then build the infrastructure to amplify it.</p>
+              <p class="team-card__bio" style="margin-top: 12px;">He is also a leader in the Kansas arts community, an active choral conductor and arts administrator, and one of the early adopters building serious AI-powered media operations in the region.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__photo">🚀</div>
+            <div class="team-card__body">
+              <div class="team-card__name">Dawson Wagner</div>
+              <div class="team-card__title">Co-Founder · Producer · Co-Host</div>
+              <p class="team-card__bio">Dawson is the production backbone of Fractal Media Solutions — bringing technical know-how, creative instinct, and a steady presence behind the mic and behind the scenes. As co-host of <em>The Space Between</em>, he helps translate complex science into compelling audio content that holds a global audience.</p>
+              <p class="team-card__bio" style="margin-top: 12px;">His partnership with Kolby is the foundation the business is built on: complementary strengths, shared standards, and a long track record of making things together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Values ─── -->
+    <section class="section" style="background: var(--white);">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">How We Work</span>
+          <h2>Principles we don't negotiate on</h2>
+        </div>
+        <div class="value-grid">
+          <div class="value-item">
+            <div class="value-item__num">01</div>
+            <h4>Credibility without gatekeepers</h4>
+            <p>We believe the media landscape has shifted permanently. Credibility is earned through consistency and craft — not by having the right credential or the right platform hand you a mic.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-item__num">02</div>
+            <h4>You own your infrastructure</h4>
+            <p>Any AI system or content engine we build for a client belongs to them — not to a closed platform. We design for ownership, not dependency.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-item__num">03</div>
+            <h4>Nuance is worth the investment</h4>
+            <p>Attention economies reward volume and outrage. We help clients build an audience that stays — because what they're saying is actually worth hearing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="section--sm">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Let's work together.</h2>
+            <p>Discovery calls are always free. Tell us what you're building.</p>
+          </div>
+          <a href="contact.html" class="btn btn--cream">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/logo.png" alt="Fractal Media Solutions" />
+          </div>
+          <p>Strategic communications and media production for brands ready to build something worth hearing. Based in Southwest Kansas.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#podcast">Podcast Dev</a></li>
+            <li><a href="services.html#drone">Drone</a></li>
+            <li><a href="services.html#voiceover">Voiceover</a></li>
+            <li><a href="services.html#advertising">Advertising</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>AI Services</h4>
+          <ul>
+            <li><a href="ai-services.html">EA Setup</a></li>
+            <li><a href="ai-services.html">SEO Audit</a></li>
+            <li><a href="ai-services.html">Knowledge Base</a></li>
+            <li><a href="ai-services.html">Architect Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="podcast.html">The Space Between</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Fractal Media Solutions, LLC. All rights reserved.</p>
+        <p>Built in Southwest Kansas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
