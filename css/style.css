@@ -897,7 +897,7 @@ p  { color: var(--ink-mid); line-height: 1.75; }
 }
 
 @media (max-width: 768px) {
-  .hero__heading-with-logo { flex-direction: column; gap: 32px; }
+  .hero__heading-with-logo { flex-direction: column; gap: 32px; margin-bottom: 0; }
   .hero__logo { height: 280px; }
   .nav__links, .nav__cta { display: none; }
   .nav__hamburger { display: flex; }
@@ -908,6 +908,7 @@ p  { color: var(--ink-mid); line-height: 1.75; }
 }
 
 @media (max-width: 480px) {
+  .hero__logo { display: none; }
   .section { padding: 64px 0; }
   .contact-form { padding: 24px; }
 }
