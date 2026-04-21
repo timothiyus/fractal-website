@@ -47,7 +47,7 @@ document.querySelectorAll('.nav__links a').forEach(a => {
 const form = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-form?.addEventListener('submit', (e) => {
+form?.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   // Basic validation
@@ -63,15 +63,34 @@ form?.addEventListener('submit', (e) => {
 
   if (!valid) return;
 
-  // Simulate submission (replace with real endpoint)
+  // Submit to Formspree
   const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  setTimeout(() => {
-    form.style.display = 'none';
-    formSuccess.style.display = 'block';
-  }, 1000);
+  try {
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      formSuccess.style.display = 'block';
+    } else {
+      btn.textContent = 'Send Message →';
+      btn.disabled = false;
+      alert('There was an error sending your message. Please try again.');
+    }
+  } catch (error) {
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+    alert('There was an error sending your message. Please try again.');
+  }
 });
 
 // ─── Smooth scroll for anchor links ───
